@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="card">
+        <h1 class="title">EventSwift</h1>
+        <form action="#" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+            <p>New User?<a href="/user-authn/signuppart/signup.html">Sign Up!</a></p>
+        </form>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Simulate loading delay (you can replace this with actual data loading)
+            setTimeout(function () {
+                document.querySelector('.loader').style.display = 'none';
+                document.querySelector('.eventheading').classList.add('fade-in');
+                document.querySelector('.container').classList.add('fade-in');
+            }, 2000); // Adjust the delay time as needed
+        });
+    </script>
+    
+</body>
+</html>
