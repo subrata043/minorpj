@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regstyle.css">
+    <title>Event Registration Form</title>
+</head>
+<body>
+
+    <div class="registration-container">
+        <h1>Event Registration Form</h1>
+        <form action="#" method="POST" id="registrationForm">
+
+            <!-- Personal Information Section -->
+            <div class="input-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="input-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <div class="input-group">
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+            </div>
+
+            <div class="input-group">
+                <label for="emailAddress">Email Address:</label>
+                <input type="email" id="emailAddress" name="emailAddress" required>
+            </div>
+
+            <!-- Address Section -->
+            <div class="input-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+
+            <div class="input-group">
+                <label for="state">State/Province:</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+
+            <div class="input-group">
+                <label for="zipCode">ZIP/Postal Code:</label>
+                <input type="text" id="zipCode" name="zipCode" required>
+            </div>
+
+            <!-- Event Selection Section -->
+            <div class="event-selection">
+                <label for="events">Select Event:</label>
+                <div class="event-options">
+                    <!-- Event 1 -->
+                    <label class="event-option" for="event1">
+                        <input type="radio" id="event1" name="eventSelection" value="Outdoor Movie Night">
+                        <img src="IMAGES/outdoor.jpg" alt="Outdoor Movie Night">
+                        <p>Outdoor Movie Night</p>
+                        <p>Time: 7:00 PM | Location: Park</p>
+                    </label>
+
+                    <!-- Event 2 -->
+                    <label class="event-option" for="event2">
+                        <input type="radio" id="event2" name="eventSelection" value="Carnival or Fair">
+                        <img src="IMAGES/carnival.avif" alt="Carnival or Fair">
+                        <p>Carnival or Fair</p>
+                        <p>Time: 3:00 PM | Location: Fairgrounds</p>
+                    </label>
+
+                    <!-- Event 3 -->
+                    <label class="event-option" for="event3">
+                        <input type="radio" id="event3" name="eventSelection" value="Family Fun Run/Walk">
+                        <img src="IMAGES/picnic.avif".jpg" alt="Family Fun Run/Walk">
+                        <p>Community Picnic</p>
+                        <p>Time: 9:00 AM | Location: Community Park</p>
+                    </label>
+
+                </div>
+            </div>
+
+            <!-- Confirmation Section -->
+            <div class="confirmation">
+                <label for="confirmation">I confirm my registration:</label>
+                <input type="checkbox" id="confirmation" name="confirmation" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-button">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
